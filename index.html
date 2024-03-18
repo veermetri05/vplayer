@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player Demo</title>
-    <script async src="https://saturn.tech/widget.js#integration=5393dc36-6cca-4add-b3cb-0cfab54f15c5"></script>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+  <link rel='stylesheet' href='https://cdn.plyr.io/3.6.12/plyr.css'><link rel="stylesheet" href="./style.css">
+  <script async src="https://saturn.tech/widget.js#integration=5393dc36-6cca-4add-b3cb-0cfab54f15c5"></script>
 </head>
 <body>
-    This is a demo site to be launched on Cloudflare pages
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HLS Demo</title>
+  </head>
+  <body>
+    URL of Playlist.m3u8: <input type="text" id="link" >
+    <input type="button" id="submit-button" value="Submit HASH"/>
+    <input type="button" id="submit-button2" value="Submit LINK"/>
+    <h4>
+
+      Hashes: <br>
+      Qmd5SFAMqAyPs7Livx3vgqcnyuj76HQ3tPfy2KAZ5i9NQh<br>
+      QmXv1B2xvm6CXAVZFuNjafRNsx7rtjfBegkxFfWbCEsmY2<br>
+    </h4>
+    <p id='result-text' > </p>
+        <video id="video"  controls playsinline  muted></video>
+
+    
+    <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://unpkg.com/plyr@3'></script><script  src="./script.js"></script>
+
 </body>
 </html>
