@@ -18,7 +18,7 @@
     if (isHash) {
        url = urlInput.value;
     } else {
-       url = "https://w3s.link/ipfs/" + urlInput.value + "/playlist.m3u8";
+       url = "https://cloudflare-ipfs.com/ipfs/" + urlInput.value + "/playlist.m3u8";
     }
 
     const validUrlPattern = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/i;
